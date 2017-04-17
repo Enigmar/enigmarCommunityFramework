@@ -1,1 +1,1 @@
-# enigmarCommunityFramework
+# EnigmarCommunityFramework
