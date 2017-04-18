@@ -1,0 +1,40 @@
+<!--  
+* This is a detailed explanation
+* EnigmarCommunityFramework is licensed under the
+* GNU Lesser General Public License v3.0
+
+* Permissions of this copyleft license are conditioned on making available complete 
+* source code of licensed works and modifications under the same license or the GNU 
+* GPLv3. Copyright and license notices must be preserved. Contributors provide an 
+* express grant of patent rights. However, a larger work using the licensed work through 
+* interfaces provided by the licensed work may be distributed under different terms and 
+* without source code for the larger work.
+ -->
+
+.logo-text {
+	background-color: white;
+	padding: 20px;
+	border-radius: 0.5rem;
+}
+
+@media ( min-width : 768px) {
+	.logo-field {
+		margin: 5% auto;
+	}
+}
+
+@media ( min-width : 1200px) {
+	.logo-field {
+		margin: 10% auto;
+	}
+}
+
+.logo-field {
+	text-align: center;
+	max-width: 550px;
+	min-width: 200px;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
