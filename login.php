@@ -10,7 +10,7 @@
 * interfaces provided by the licensed work may be distributed under different terms and 
 * without source code for the larger work.
  -->
- 
+
 <?php
 include_once $_SERVER ['DOCUMENT_ROOT'] . '/ecf/core/class/loginProcess.php';
 include_once $_SERVER ['DOCUMENT_ROOT'] . '/ecf/core/api/enigmarAPI.php';

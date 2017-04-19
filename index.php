@@ -56,8 +56,7 @@ if ($background == "default") {
 	content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <title><?php echo "Enigmar.de | " . ucfirst($page); ?></title>
 
-<link href="/ecf/css/bootstrap.min.css" rel="stylesheet"
-	type="text/css">
+<link href="/ecf/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <link href="<?php echo $globalCSS; ?>" rel="stylesheet" type="text/css">
 <link href="<?php echo $bodyCSS; ?>" rel="stylesheet" type="text/css">
 <script>window.jQuery || document.write('<script src="/ecf/js/jquery.min.js"><\/script>')</script>
