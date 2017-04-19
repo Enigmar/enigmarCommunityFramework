@@ -16,5 +16,4 @@ $hostname = 'localhost';
 $database = 'database';
 $user = 'user';
 $password = 'password';
-
 ?>
