@@ -17,7 +17,7 @@ if (! isset ( $page )) {
 	$page = "start";
 }
 
-if (! is_file ( '../content/pages/public/' . $page . '.php' )) {
+if (! is_file ( $_SERVER ['DOCUMENT_ROOT'] . '/views/public/' . $page . '.php' )) {
 	$page = '404';
 }
 
@@ -114,7 +114,7 @@ if ($background == "default") {
 
 	<div class="container container-main">
 		<div class="jumbotron">
-		<?php include_once ('../content/pages/public/'.$page.'.php')?>
+		<?php include_once ($_SERVER ['DOCUMENT_ROOT'] . '/views/public/'.$page.'.php')?>
       </div>
 	</div>
 

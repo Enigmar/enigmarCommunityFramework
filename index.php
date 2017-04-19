@@ -19,7 +19,7 @@ $page = $_GET ["p"];
 if (! isset ( $page )) {
 	$page = "start";
 }
-if (! is_file ( $_SERVER ['DOCUMENT_ROOT'] . '/content/pages/' . $page . '.php' )) {
+if (! is_file ( $_SERVER ['DOCUMENT_ROOT'] . '/views/' . $page . '.php' )) {
 	$page = '404';
 }
 
@@ -134,7 +134,7 @@ if ($background == "default") {
 
 	<div class="container container-main">
 		<div class="jumbotron">
-		<?php include_once ($_SERVER['DOCUMENT_ROOT'] . '/content/pages/'.$page.'.php')?>
+		<?php include_once ($_SERVER['DOCUMENT_ROOT'] . '/views/'.$page.'.php')?>
       </div>
 	</div>
 
