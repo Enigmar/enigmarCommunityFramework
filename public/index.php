@@ -78,7 +78,7 @@ if ($background == "default") {
 		</a>
 		<div class="collapse navbar-collapse" id="navbarNavDropdown">
 			<ul class="navbar-nav mr-auto">
-				<li class="nav-item active"><a class="nav-link" href="/public/">Start
+				<li class="nav-item active"><a class="nav-link" href="/public/">Dashboard
 						<span class="sr-only">(current)</span>
 				</a></li>
 				<li class="nav-item dropdown"><a class="nav-link dropdown-toggle"
