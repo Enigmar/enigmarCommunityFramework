@@ -17,9 +17,9 @@ include $_SERVER ['DOCUMENT_ROOT'] . '/inc/settings.php';
 $message = array ();
 if (! empty ( $_POST )) {
 	if (empty ( $_POST ['f'] ['accountname'] ) || empty ( $_POST ['f'] ['pass'] ) || empty ( $_POST ['f'] ['pass_again'] )) {
-		$message ['error'] = 'Es wurden nicht alle Felder ausgefüllt.';
+		$message ['error'] = 'Es wurden nicht alle Felder ausgefuellt.';
 	} else if ($_POST ['f'] ['pass'] != $_POST ['f'] ['pass_again']) {
-		$message ['error'] = 'Die eingegebenen Passwörter stimmen nicht überein.';
+		$message ['error'] = 'Die eingegebenen Passwoerter stimmen nicht ueberein.';
 	} else {
 		unset ( $_POST ['f'] ['pass_again'] );
 		$salt = '';

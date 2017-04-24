@@ -14,7 +14,7 @@
 
 <?php
 include $_SERVER ['DOCUMENT_ROOT'] . '/inc/settings.php';
-include_once $_SERVER ['DOCUMENT_ROOT'] . '/ecf/core/api/enigmarAPI.php';
+include_once $_SERVER ['DOCUMENT_ROOT'] . '/ecf/core/api/profileAPI.php';
 $exitCode = - 1;
 $exitMsg = "";
 

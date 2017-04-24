@@ -13,7 +13,7 @@
  -->
 
 <?php
-include_once $_SERVER ['DOCUMENT_ROOT'] . '/ecf/core/api/enigmarAPI.php';
+include_once $_SERVER ['DOCUMENT_ROOT'] . '/ecf/core/api/profileAPI.php';
 checkLogin ( true );
 
 $page = $_GET ["p"];
