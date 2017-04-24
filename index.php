@@ -18,7 +18,7 @@ checkLogin ( true );
 
 $page = $_GET ["p"];
 if (! isset ( $page )) {
-	$page = "start";
+	$page = "dashboard";
 }
 if (! is_file ( $_SERVER ['DOCUMENT_ROOT'] . '/views/' . $page . '.php' )) {
 	$page = '404';

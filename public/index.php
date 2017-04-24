@@ -15,7 +15,7 @@
 <?php
 $page = $_GET ["p"];
 if (! isset ( $page )) {
-	$page = "start";
+	$page = "dashboard";
 }
 
 if (! is_file ( $_SERVER ['DOCUMENT_ROOT'] . '/views/public/' . $page . '.php' )) {
