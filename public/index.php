@@ -96,8 +96,12 @@ if ($background == "default") {
 					href="https://jenkins.enigmar.de">Buildserver</a></li>
 				<li class="nav-item"><a class="nav-link"
 					href="https://github.com/LinzN">Source Repository</a></li>
-				<li class="nav-item"><a class="nav-link"
-					href="https://metrics.enigmar.de">Metrics</a></li>
+				<li class="nav-item dropdown"><a class="nav-link dropdown-toggle"
+					href="" id="navbarDropdownMenuLink" data-toggle="dropdown"
+					aria-haspopup="true" aria-expanded="false"> Metrics </a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<a class="dropdown-item" href="https://bstats.org/plugin/bukkit/Cubit">Cubit</a>
+					</div></li>
 			</ul>
 			<ul class="navbar-nav">
 				<li class="nav-item dropdown"><a class="nav-link dropdown-toggle"
