@@ -1,4 +1,5 @@
 <!--  
+* ## Copyleft by Niklas Linz ##
 * This is a detailed explanation
 * EnigmarCommunityFramework is licensed under the
 * GNU Lesser General Public License v3.0
@@ -13,7 +14,7 @@
 
 <?php
 include $_SERVER ['DOCUMENT_ROOT'] . '/inc/settings.php';
-include_once $_SERVER ['DOCUMENT_ROOT'] . '/ecf/core/api/enigmarAPI.php';
+include_once $_SERVER ['DOCUMENT_ROOT'] . '/ecf/core/api/profileAPI.php';
 $exitCode = - 1;
 $exitMsg = "";
 

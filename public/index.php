@@ -1,4 +1,5 @@
 <!--  
+* ## Copyleft by Niklas Linz ##
 * This is a detailed explanation
 * EnigmarCommunityFramework is licensed under the
 * GNU Lesser General Public License v3.0
@@ -14,7 +15,7 @@
 <?php
 $page = $_GET ["p"];
 if (! isset ( $page )) {
-	$page = "start";
+	$page = "dashboard";
 }
 
 if (! is_file ( $_SERVER ['DOCUMENT_ROOT'] . '/views/public/' . $page . '.php' )) {
@@ -77,7 +78,7 @@ if ($background == "default") {
 		</a>
 		<div class="collapse navbar-collapse" id="navbarNavDropdown">
 			<ul class="navbar-nav mr-auto">
-				<li class="nav-item active"><a class="nav-link" href="/public/">Start
+				<li class="nav-item active"><a class="nav-link" href="/public/">Dashboard
 						<span class="sr-only">(current)</span>
 				</a></li>
 				<li class="nav-item dropdown"><a class="nav-link dropdown-toggle"

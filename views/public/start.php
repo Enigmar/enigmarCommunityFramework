@@ -1,1 +1,0 @@
-<b>Willkommen auf der Publicseite von Enigmar</b>

@@ -1,4 +1,5 @@
 <!--  
+* ## Copyleft by Niklas Linz ##
 * This is a detailed explanation
 * EnigmarCommunityFramework is licensed under the
 * GNU Lesser General Public License v3.0
@@ -13,7 +14,7 @@
 
 <?php
 include_once $_SERVER ['DOCUMENT_ROOT'] . '/ecf/core/class/loginProcess.php';
-include_once $_SERVER ['DOCUMENT_ROOT'] . '/ecf/core/api/enigmarAPI.php';
+include_once $_SERVER ['DOCUMENT_ROOT'] . '/ecf/core/api/profileAPI.php';
 if (isLoggedin ( true )) {
 	header ( 'Location: http://' . $_SERVER ['HTTP_HOST'] . '/index.php' );
 }
@@ -24,7 +25,7 @@ if (isLoggedin ( true )) {
 <html>
 <head>
 <meta charset="utf-8">
-<title>Enigmar.de | Restricted Authentication</title>
+<title>Enigmar.de | Authentication</title>
 <meta name="description"
 	content="Only for team members. For public visit, use https://public.enigmar.de">
 <meta name="author" content="Niklas Linz">
