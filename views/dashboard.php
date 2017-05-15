@@ -13,11 +13,11 @@
  -->
 <div class="container container-main">
 	<div class="jumbotron">
-		<h2>Demo-News-2</h2> <br>
+		<h3>Demo-News-2</h3> <br>
 		This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content 
       </div>
 	<div class="jumbotron">
-		<h2>Demo-News-1</h2> <br>
+		<h3>Demo-News-1</h3> <br>
 		This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content 
       </div>
 </div>
