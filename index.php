@@ -84,7 +84,8 @@ if ($background == "default") {
 				<li class="nav-item active"><a class="nav-link" href="/">Dashboard <span
 						class="sr-only">(current)</span></a></li>
 				<li class="nav-item "><a class="nav-link" href="/index.php?p=forum">Forum</a></li>
-				<li class="nav-item "><a class="nav-link" href="/index.php?p=members">Mitglieder</a></li>
+				<li class="nav-item "><a class="nav-link"
+					href="/index.php?p=members">Mitglieder</a></li>
 			</ul>
 			<?php
 			if (isLoggedin ()) {
@@ -96,7 +97,7 @@ if ($background == "default") {
 		aria-haspopup="true" aria-expanded="false"> Profil </a>
 		<div class="dropdown-menu dropdown-menu-right"
 		aria-labelledby="navbarDropdownMenuLink">
-		<a class="dropdown-item profilname"><b>' . htmlspecialchars($_SESSION["userprofil"]["username"]).'</b></a>
+		<a class="dropdown-item profilname"><b>' . htmlspecialchars ( $_SESSION ["userprofil"] ["username"] ) . '</b></a>
 						<a class="dropdown-item" href="/index.php?p=changePassword">Change
 							Password</a> <a class="dropdown-item" href="/logout.php">Logout</a>
 					</div></li>
@@ -123,11 +124,9 @@ if ($background == "default") {
 		</div>
 	</nav>
 
-	<div class="container container-main">
-		<div class="jumbotron">
+
 		<?php include_once ($_SERVER['DOCUMENT_ROOT'] . '/views/'.$page.'.php')?>
-      </div>
-	</div>
+
 
 	<footer class="footer">
 		<div class="container">

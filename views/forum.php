@@ -11,6 +11,11 @@
 * interfaces provided by the licensed work may be distributed under different terms and 
 * without source code for the larger work.
  -->
+<div class="container container-main">
+	<div class="jumbotron">
+
 <?php
- echo 'This is demo forum';
+echo 'This is demo forum';
 ?>
+      </div>
+</div>
