@@ -83,36 +83,12 @@ if ($background == "default") {
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item active"><a class="nav-link" href="/">Dashboard <span
 						class="sr-only">(current)</span></a></li>
-				<li class="nav-item dropdown"><a class="nav-link dropdown-toggle"
-					href="" id="navbarDropdownMenuLink" data-toggle="dropdown"
-					aria-haspopup="true" aria-expanded="false"> Media Library </a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-						<a class="dropdown-item" href="https://media.enigmar.de/web">Plex
-							Streaming</a> <a class="dropdown-item"
-							href="https://stats.enigmar.de/">Plex Statistic</a> <a
-							class="dropdown-item" href="https://sinus.enigmar.de/">Music
-							Interface</a>
-					</div></li>
-				<li class="nav-item dropdown"><a class="nav-link dropdown-toggle"
-					href="" id="navbarDropdownMenuLink" data-toggle="dropdown"
-					aria-haspopup="true" aria-expanded="false"> Mail Service </a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-						<a class="dropdown-item" href="https://mail.enigmar.de/">Mail
-							Login</a> <a class="dropdown-item"
-							href="https://mailadmin.enigmar.de/login.php">Mail Settings</a>
-					</div></li>
-				<li class="nav-item dropdown"><a class="nav-link dropdown-toggle"
-					href="" id="navbarDropdownMenuLink" data-toggle="dropdown"
-					aria-haspopup="true" aria-expanded="false"> File Storage </a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-						<a class="dropdown-item" href="https://cloud.enigmar.de/">NextCloud</a>
-					</div></li>
-				<li class="nav-item dropdown"><a class="nav-link dropdown-toggle"
-					href="" id="navbarDropdownMenuLink" data-toggle="dropdown"
-					aria-haspopup="true" aria-expanded="false"> Manage System </a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-						<a class="dropdown-item" href="https://proxmox.enigmar.de/">Proxmox</a>
-					</div></li>
+				<li class="nav-item "><a class="nav-link" href="/public">Forum</a>
+				</li>
+				<li class="nav-item "><a class="nav-link" href="/public">Public</a>
+				</li>
+				<li class="nav-item "><a class="nav-link" href="/public">Public</a>
+				</li>
 			</ul>
 			<ul class="navbar-nav">
 				<li class="nav-item "><a class="nav-link" href="/public">Public</a>
