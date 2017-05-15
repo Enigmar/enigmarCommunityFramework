@@ -83,28 +83,48 @@ if ($background == "default") {
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item active"><a class="nav-link" href="/">Dashboard <span
 						class="sr-only">(current)</span></a></li>
-				<li class="nav-item "><a class="nav-link" href="/public">Forum</a>
-				</li>
-				<li class="nav-item "><a class="nav-link" href="/public">Public</a>
-				</li>
-				<li class="nav-item "><a class="nav-link" href="/public">Public</a>
-				</li>
+				<li class="nav-item "><a class="nav-link" href="#">Forum</a></li>
+				<li class="nav-item "><a class="nav-link" href="#">Mitglieder</a></li>
+				<li class="nav-item "><a class="nav-link" href="#">Public</a></li>
 			</ul>
-			<ul class="navbar-nav">
+			<?php
+			if (isLoggedin ()) {
+				
+				echo '
+				<ul class="navbar-nav">
 				<li class="nav-item "><a class="nav-link" href="/public">Public</a>
 				</li>
 				<li class="nav-item dropdown"><a class="nav-link dropdown-toggle"
-					href="" id="navbarDropdownMenuLink" data-toggle="dropdown"
-					aria-haspopup="true" aria-expanded="false"> Profil </a>
-					<div class="dropdown-menu dropdown-menu-right"
-						aria-labelledby="navbarDropdownMenuLink">
-						<a class="dropdown-item profilname"><b><?php echo htmlspecialchars($_SESSION['userprofil']['username']); ?></b></a>
+		href="" id="navbarDropdownMenuLink" data-toggle="dropdown"
+		aria-haspopup="true" aria-expanded="false"> Profil </a>
+		<div class="dropdown-menu dropdown-menu-right"
+		aria-labelledby="navbarDropdownMenuLink">
+		<a class="dropdown-item profilname"><b>' . htmlspecialchars($_SESSION["userprofil"]["username"]).'</b></a>
 						<a class="dropdown-item" href="/index.php?p=changePassword">Change
 							Password</a> <a class="dropdown-item" href="/logout.php">Logout</a>
 					</div></li>
 				<li class="nav-item "><a class="nav-link"
 					href="/index.php?p=manageInterface">Manage Interface</a></li>
-			</ul>
+			</ul>';
+			} else {
+				
+				echo '
+				<ul class="navbar-nav">
+				<li class="nav-item "><a class="nav-link" href="/public">Public</a>
+				</li>
+				<li class="nav-item dropdown"><a class="nav-link dropdown-toggle"
+		href="" id="navbarDropdownMenuLink" data-toggle="dropdown"
+		aria-haspopup="true" aria-expanded="false"> Profil </a>
+		<div class="dropdown-menu dropdown-menu-right"
+		aria-labelledby="navbarDropdownMenuLink">
+		<a class="dropdown-item profilname"><b>Gast</b></a>
+						<a class="dropdown-item" href="/logout.php">Login</a>
+					</div></li>
+			</ul>';
+			}
+			
+			?>
+			
 		</div>
 	</nav>
 
