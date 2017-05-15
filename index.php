@@ -83,17 +83,14 @@ if ($background == "default") {
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item active"><a class="nav-link" href="/">Dashboard <span
 						class="sr-only">(current)</span></a></li>
-				<li class="nav-item "><a class="nav-link" href="#">Forum</a></li>
-				<li class="nav-item "><a class="nav-link" href="#">Mitglieder</a></li>
-				<li class="nav-item "><a class="nav-link" href="#">Public</a></li>
+				<li class="nav-item "><a class="nav-link" href="/index.php?p=forum">Forum</a></li>
+				<li class="nav-item "><a class="nav-link" href="/index.php?p=members">Mitglieder</a></li>
 			</ul>
 			<?php
 			if (isLoggedin ()) {
 				
 				echo '
 				<ul class="navbar-nav">
-				<li class="nav-item "><a class="nav-link" href="/public">Public</a>
-				</li>
 				<li class="nav-item dropdown"><a class="nav-link dropdown-toggle"
 		href="" id="navbarDropdownMenuLink" data-toggle="dropdown"
 		aria-haspopup="true" aria-expanded="false"> Profil </a>
@@ -110,8 +107,6 @@ if ($background == "default") {
 				
 				echo '
 				<ul class="navbar-nav">
-				<li class="nav-item "><a class="nav-link" href="/public">Public</a>
-				</li>
 				<li class="nav-item dropdown"><a class="nav-link dropdown-toggle"
 		href="" id="navbarDropdownMenuLink" data-toggle="dropdown"
 		aria-haspopup="true" aria-expanded="false"> Profil </a>
