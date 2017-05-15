@@ -13,16 +13,11 @@
  -->
 <div class="container container-main">
 	<div class="jumbotron">
-		<?php
-		echo 'This is demo dashboard';
-		?>
+		<h2>Demo-News-2</h2> <br>
+		This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content 
       </div>
-</div>
-
-<div class="container container-main">
 	<div class="jumbotron">
-		<?php
-		echo 'This is demo dashboard';
-		?>
+		<h2>Demo-News-1</h2> <br>
+		This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content This is demo content 
       </div>
 </div>
