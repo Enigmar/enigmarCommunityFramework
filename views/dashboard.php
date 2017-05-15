@@ -13,9 +13,16 @@
  -->
 <div class="container container-main">
 	<div class="jumbotron">
-<?php
-echo 'This is demo dashboard';
-?>
+		<?php
+		echo 'This is demo dashboard';
+		?>
+      </div>
+</div>
 
+<div class="container container-main">
+	<div class="jumbotron">
+		<?php
+		echo 'This is demo dashboard';
+		?>
       </div>
 </div>
