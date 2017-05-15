@@ -113,7 +113,7 @@ if ($background == "default") {
 		<div class="dropdown-menu dropdown-menu-right"
 		aria-labelledby="navbarDropdownMenuLink">
 		<a class="dropdown-item profilname"><b>Gast</b></a>
-						<a class="dropdown-item" href="/logout.php">Login</a>
+						<a class="dropdown-item" href="/login.php">Login</a>
 					</div></li>
 			</ul>';
 			}
