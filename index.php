@@ -55,7 +55,7 @@ if ($background == "default") {
 <link rel="icon" href="./content/favicon.ico">
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title><?php echo "Enigmar.de | " . ucfirst($page); ?></title>
+<title><?php echo "Enigmar Demo | " . ucfirst($page); ?></title>
 
 <link href="/ecf/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <link href="<?php echo $globalCSS; ?>" rel="stylesheet" type="text/css">
@@ -77,7 +77,7 @@ if ($background == "default") {
 		</button>
 		<a class="navbar-brand" href="/index.php"> <img
 			src="/content/images/enigmar-logo.svg" width="30" height="30"
-			class="d-inline-block align-top" alt=""> Enigmar
+			class="d-inline-block align-top" alt=""> Enigmar Demo
 		</a>
 		<div class="collapse navbar-collapse" id="navbarNavDropdown">
 			<ul class="navbar-nav mr-auto">
