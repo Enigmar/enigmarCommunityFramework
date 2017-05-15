@@ -11,8 +11,5 @@
 * interfaces provided by the licensed work may be distributed under different terms and 
 * without source code for the larger work.
  -->
-<div class="container container-main">
-	<div class="jumbotron">
+ 
 <b>404</b>
-</div>
-</div>

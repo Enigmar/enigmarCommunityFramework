@@ -12,8 +12,6 @@
 * without source code for the larger work.
  -->
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/ecf/core/class/createProcess.php'; ?>
-<div class="container container-main">
-	<div class="jumbotron">
 <link href="/ecf/themes/default/login.css" rel="stylesheet"
 	type="text/css">
 <div id="loginField" class="logo-field">
@@ -44,6 +42,4 @@ if (isset ( $message ['success'] )) :
 				class="btn btn-outline-success">Create Account</button>
 		</fieldset>
 	</form>
-</div>
-</div>
 </div>

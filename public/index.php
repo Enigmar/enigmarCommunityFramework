@@ -13,18 +13,16 @@
  -->
 
 <?php
-include_once $_SERVER ['DOCUMENT_ROOT'] . '/ecf/core/api/profileAPI.php';
-checkLogin ( true );
-
 $page = $_GET ["p"];
 if (! isset ( $page )) {
 	$page = "dashboard";
 }
-if (! is_file ( $_SERVER ['DOCUMENT_ROOT'] . '/views/' . $page . '.php' )) {
+
+if (! is_file ( $_SERVER ['DOCUMENT_ROOT'] . '/views/public/' . $page . '.php' )) {
 	$page = '404';
 }
 
-$theme = $_SESSION ['userprofil'] ['theme'];
+$theme = "blue";
 
 $globalCSS = "/ecf/themes/default/global.css";
 $bodyCSS = "/ecf/themes/default/body.css";
@@ -36,15 +34,14 @@ if (is_file ( $_SERVER ['DOCUMENT_ROOT'] . '/ecf/themes/' . $theme . '/global.cs
 if (is_file ( $_SERVER ['DOCUMENT_ROOT'] . '/ecf/themes/' . $theme . '/body.css' )) {
 	$bodyCSS = '/ecf/themes/' . $theme . '/body.css';
 }
+$background = "default";
 $backgroundClass = "";
-$background = $_SESSION ['userprofil'] ['background'];
 if ($background == "default") {
 	$background = "/ecf/themes/" . $theme . "/img/background.jpg";
 	$isDefaultBG = true;
 } else {
 	$backgroundClass = "body-background";
 }
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -52,10 +49,10 @@ if ($background == "default") {
 <meta charset="utf-8">
 <meta name="description" content="">
 <meta name="author" content="">
-<link rel="icon" href="./content/favicon.ico">
+<link rel="icon" href="../content/favicon.ico">
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title><?php echo "Enigmar.de | " . ucfirst($page); ?></title>
+<title><?php echo "Enigmar.de Public | " . ucfirst($page); ?></title>
 
 <link href="/ecf/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <link href="<?php echo $globalCSS; ?>" rel="stylesheet" type="text/css">
@@ -75,66 +72,54 @@ if ($background == "default") {
 			aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
-		<a class="navbar-brand" href="/index.php"> <img
-			src="/content/images/enigmar-logo.svg" width="30" height="30"
-			class="d-inline-block align-top" alt=""> Enigmar
+		<a class="navbar-brand" href="./index.php"> <img
+			src="../content/images/enigmar-logo.svg" width="30" height="30"
+			class="d-inline-block align-top" alt=""> Enigmar Public
 		</a>
 		<div class="collapse navbar-collapse" id="navbarNavDropdown">
 			<ul class="navbar-nav mr-auto">
-				<li class="nav-item active"><a class="nav-link" href="/">Dashboard <span
-						class="sr-only">(current)</span></a></li>
+				<li class="nav-item active"><a class="nav-link" href="/public/">Dashboard
+						<span class="sr-only">(current)</span>
+				</a></li>
 				<li class="nav-item dropdown"><a class="nav-link dropdown-toggle"
 					href="" id="navbarDropdownMenuLink" data-toggle="dropdown"
-					aria-haspopup="true" aria-expanded="false"> Media Library </a>
+					aria-haspopup="true" aria-expanded="false"> Bukkit / Spigot </a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-						<a class="dropdown-item" href="https://media.enigmar.de/web">Plex
-							Streaming</a> <a class="dropdown-item"
-							href="https://stats.enigmar.de/">Plex Statistic</a> <a
-							class="dropdown-item" href="https://sinus.enigmar.de/">Music
-							Interface</a>
+						<a class="dropdown-item" href="#">Cubit</a>
 					</div></li>
 				<li class="nav-item dropdown"><a class="nav-link dropdown-toggle"
 					href="" id="navbarDropdownMenuLink" data-toggle="dropdown"
-					aria-haspopup="true" aria-expanded="false"> Mail Service </a>
+					aria-haspopup="true" aria-expanded="false"> Bungeecord </a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-						<a class="dropdown-item" href="https://mail.enigmar.de/">Mail
-							Login</a> <a class="dropdown-item"
-							href="https://mailadmin.enigmar.de/login.php">Mail Settings</a>
+						<a class="dropdown-item" href="#">noItem</a>
 					</div></li>
+				<li class="nav-item"><a class="nav-link"
+					href="https://jenkins.enigmar.de">Buildserver</a></li>
+				<li class="nav-item"><a class="nav-link"
+					href="https://github.com/LinzN">Source Repository</a></li>
 				<li class="nav-item dropdown"><a class="nav-link dropdown-toggle"
 					href="" id="navbarDropdownMenuLink" data-toggle="dropdown"
-					aria-haspopup="true" aria-expanded="false"> File Storage </a>
+					aria-haspopup="true" aria-expanded="false"> Metrics </a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-						<a class="dropdown-item" href="https://cloud.enigmar.de/">NextCloud</a>
-					</div></li>
-				<li class="nav-item dropdown"><a class="nav-link dropdown-toggle"
-					href="" id="navbarDropdownMenuLink" data-toggle="dropdown"
-					aria-haspopup="true" aria-expanded="false"> Manage System </a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-						<a class="dropdown-item" href="https://proxmox.enigmar.de/">Proxmox</a>
+						<a class="dropdown-item" href="https://bstats.org/plugin/bukkit/Cubit">Cubit</a>
 					</div></li>
 			</ul>
 			<ul class="navbar-nav">
-				<li class="nav-item "><a class="nav-link" href="/public">Public</a>
-				</li>
 				<li class="nav-item dropdown"><a class="nav-link dropdown-toggle"
 					href="" id="navbarDropdownMenuLink" data-toggle="dropdown"
-					aria-haspopup="true" aria-expanded="false"> Profil </a>
+					aria-haspopup="true" aria-expanded="false"> More </a>
 					<div class="dropdown-menu dropdown-menu-right"
 						aria-labelledby="navbarDropdownMenuLink">
-						<a class="dropdown-item profilname"><b><?php echo htmlspecialchars($_SESSION['userprofil']['username']); ?></b></a>
-						<a class="dropdown-item" href="/index.php?p=changePassword">Change
-							Password</a> <a class="dropdown-item" href="/logout.php">Logout</a>
+						<a class="dropdown-item" href="#">About us</a> <a
+							class="dropdown-item" href="/index.php">Restrict Area</a>
 					</div></li>
-				<li class="nav-item "><a class="nav-link"
-					href="/index.php?p=manageInterface">Manage Interface</a></li>
 			</ul>
 		</div>
 	</nav>
 
 	<div class="container container-main">
 		<div class="jumbotron">
-		<?php include_once ($_SERVER['DOCUMENT_ROOT'] . '/views/'.$page.'.php')?>
+		<?php include_once ($_SERVER ['DOCUMENT_ROOT'] . '/views/public/'.$page.'.php')?>
       </div>
 	</div>
 

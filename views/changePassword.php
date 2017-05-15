@@ -11,10 +11,8 @@
 * interfaces provided by the licensed work may be distributed under different terms and 
 * without source code for the larger work.
  -->
-
+ 
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/ecf/core/class/changepwProcess.php'; ?>
-<div class="container container-main">
-	<div class="jumbotron">
 <link href="/ecf/themes/default/login.css" rel="stylesheet"
 	type="text/css">
 <div id="loginField" class="logo-field">
@@ -43,6 +41,4 @@
 				class="btn btn-outline-success">Change Passphrase</button>
 		</fieldset>
 	</form>
-</div>
-</div>
 </div>

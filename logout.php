@@ -13,7 +13,7 @@
  -->
 <?php
 require_once $_SERVER ['DOCUMENT_ROOT'] . '/ecf/core/class/logoutProcess.php';
-header ( 'Location: http://' . $_SERVER ['HTTP_HOST'] . '/' );
+header ( 'Location: http://' . $_SERVER ['HTTP_HOST'] . '/login.php' );
 
 ?>
 
